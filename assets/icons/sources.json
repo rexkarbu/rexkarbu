@@ -1,0 +1,51 @@
+{
+  "collection": "Simple Icons",
+  "version": "16.13.0",
+  "commit": "9ddef18c4247eab3819ec280f07cb8e95dc2a274",
+  "collection_license": "CC0-1.0",
+  "icons": [
+    {
+      "title": "Electron",
+      "hex": "47848F",
+      "source": "https://www.electronjs.org"
+    },
+    {
+      "title": "JavaScript",
+      "hex": "F7DF1E",
+      "source": "https://github.com/voodootikigod/logo.js/blob/1544bdeed6d618a6cfe4f0650d04ab8d9cfa76d9/js.svg",
+      "license": {
+        "type": "MIT"
+      }
+    },
+    {
+      "title": "Next.js",
+      "hex": "000000",
+      "source": "https://vercel.com/design/brands#next-js",
+      "guidelines": "https://vercel.com/design/brands#next-js"
+    },
+    {
+      "title": "React",
+      "hex": "61DAFB",
+      "source": "https://github.com/facebook/create-react-app/blob/282c03f9525fdf8061ffa1ec50dce89296d916bd/test/fixtures/relative-paths/src/logo.svg",
+      "aliases": {
+        "dup": [
+          {
+            "title": "React Native",
+            "source": "https://reactnative.dev"
+          }
+        ]
+      }
+    },
+    {
+      "title": "TypeScript",
+      "hex": "3178C6",
+      "source": "https://www.typescriptlang.org/branding",
+      "guidelines": "https://www.typescriptlang.org/branding"
+    },
+    {
+      "title": "Vite",
+      "hex": "9135FF",
+      "source": "https://github.com/voidzero-dev/community-design-resources/blob/55902097229cf01cf2a4ceb376f992f5cf306756/brand-assets/vite/vite-icon-color-bracketless.svg"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+name: Refresh profile assets
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 2 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.repository == 'rexkarbu/rexkarbu' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Check out profile generator
+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+        with:
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '24'
+      - name: Generate complete assets from public data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/update-activity.py --output "$RUNNER_TEMP/profile-activity"
+      - name: Validate generated files
+        run: python3 scripts/update-activity.py --validate "$RUNNER_TEMP/profile-activity"
+      - name: Hand assets to the publishing job
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: profile-activity
+          path: ${{ runner.temp }}/profile-activity/
+          if-no-files-found: error
+          retention-days: 3
+
+  publish:
+    needs: generate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Check out the latest main branch
+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+        with:
+          ref: main
+      - name: Download this run's complete asset set
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: profile-activity
+          path: ${{ runner.temp }}/profile-activity
+      - name: Install validated assets
+        run: python3 scripts/update-activity.py --install "$RUNNER_TEMP/profile-activity"
+      - name: Commit only generated assets when changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- assets/activity/data.json assets/activity/github-stats.svg assets/activity/contribution-trail.svg assets/activity/contribution-trail-static.svg assets/activity/README.md
+          if git diff --cached --quiet; then
+            echo 'Public data is unchanged.'
+            exit 0
+          fi
+          git diff --cached --check
+          git commit -m 'Refresh public profile assets [skip ci]'
+          git push origin HEAD:main
