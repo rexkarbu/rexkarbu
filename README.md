@@ -78,4 +78,6 @@ The calendar visible on GitHub at the last successful update. [Period and static
 
 ---
 
+Have an idea, question, or feedback? Feel free to start a [GitHub Discussion](https://github.com/rexkarbu/rexkarbu/discussions) or reach out via [email](mailto:rexkarbu@gmail.com).
+
 *Thanks for stopping by the workshop.*
