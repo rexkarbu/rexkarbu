@@ -1,9 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="80" height="88" viewBox="0 0 80 88" role="img" aria-label="Vite">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-label="Vite">
   <title>Vite</title>
-  <path d="M 4 0.5 L 76 0.5 L 79.5 4 L 79.5 84 L 76 87.5 L 4 87.5 L 0.5 84 L 0.5 4 Z" fill="#17243A" stroke="#9DB7A5" stroke-width="1"/>
-  <rect x="36" y="4" width="8" height="2" fill="#E5B567"/>
-  <g transform="translate(23 15) scale(1.416667)" fill="#9DB7A5">
-    <path d="M13.056 23.238a.57.57 0 0 1-1.02-.355v-5.202c0-.63-.512-1.143-1.144-1.143H5.148a.57.57 0 0 1-.464-.903l3.777-5.29c.54-.753 0-1.804-.93-1.804H.57a.574.574 0 0 1-.543-.746.6.6 0 0 1 .08-.157L5.008.78a.57.57 0 0 1 .467-.24h14.589a.57.57 0 0 1 .466.903l-3.778 5.29c-.54.755 0 1.806.93 1.806h5.745c.238 0 .424.138.513.322a.56.56 0 0 1-.063.603z"/>
+  <rect width="48" height="48" rx="11" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+  <g transform="translate(10 10) scale(1.166667)">
+    <path d="M13.056 23.238a.57.57 0 0 1-1.02-.355v-5.202c0-.63-.512-1.143-1.144-1.143H5.148a.57.57 0 0 1-.464-.903l3.777-5.29c.54-.753 0-1.804-.93-1.804H.57a.574.574 0 0 1-.543-.746.6.6 0 0 1 .08-.157L5.008.78a.57.57 0 0 1 .467-.24h14.589a.57.57 0 0 1 .466.903l-3.778 5.29c-.54.755 0 1.806.93 1.806h5.745c.238 0 .424.138.513.322a.56.56 0 0 1-.063.603z" fill="#BD34FE"/>
   </g>
-  <text x="40" y="72" text-anchor="middle" fill="#E6EDF3" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500">Vite</text>
 </svg>

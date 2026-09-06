@@ -41,22 +41,30 @@ def tile(slug, raw_svg):
     paths = source.findall("{http://www.w3.org/2000/svg}path")
     if not paths or source.attrib.get("viewBox") != "0 0 24 24":
         raise ValueError(f"Unexpected source SVG for {slug}")
-    shapes = "".join(f'<path d="{escape(p.attrib["d"], quote=True)}"/>' for p in paths)
+    d = escape(paths[0].attrib["d"], quote=True)
     title = ICONS[slug]
-    color = "#E6EDF3" if slug == "nextdotjs" else "#9DB7A5"
 
-    # 80x88 tile with pixel-cut corners (4px chamfer), midnight blue background,
-    # thin sage border, centered amber accent, 34px logo, and legible tech label.
-    border_path = "M 4 0.5 L 76 0.5 L 79.5 4 L 79.5 84 L 76 87.5 L 4 87.5 L 0.5 84 L 0.5 4 Z"
+    # 48x48 modern squircle badge with dark background, subtle border, and brand artwork
+    if slug == "nextdotjs":
+        inner = f'<circle cx="12" cy="12" r="11.5" fill="#FFFFFF"/><path d="{d}" fill="#000000"/>'
+    elif slug == "typescript":
+        inner = f'<rect width="24" height="24" rx="2" fill="#FFFFFF"/><path d="{d}" fill="#3178C6"/>'
+    elif slug == "javascript":
+        inner = f'<rect width="24" height="24" fill="#000000"/><path d="{d}" fill="#F7DF1E"/>'
+    elif slug == "react":
+        inner = f'<path d="{d}" fill="#61DAFB"/>'
+    elif slug == "electron":
+        inner = f'<path d="{d}" fill="#9FEAF9"/>'
+    elif slug == "vite":
+        inner = f'<path d="{d}" fill="#BD34FE"/>'
+
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="80" height="88" viewBox="0 0 80 88" role="img" aria-label="{title}">\n'
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-label="{title}">\n'
         f'  <title>{title}</title>\n'
-        f'  <path d="{border_path}" fill="#17243A" stroke="#9DB7A5" stroke-width="1"/>\n'
-        f'  <rect x="36" y="4" width="8" height="2" fill="#E5B567"/>\n'
-        f'  <g transform="translate(23 15) scale(1.416667)" fill="{color}">\n'
-        f'    {shapes}\n'
+        f'  <rect width="48" height="48" rx="11" fill="#161B22" stroke="#30363D" stroke-width="1"/>\n'
+        f'  <g transform="translate(10 10) scale(1.166667)">\n'
+        f'    {inner}\n'
         f'  </g>\n'
-        f'  <text x="40" y="72" text-anchor="middle" fill="#E6EDF3" font-family="-apple-system, BlinkMacSystemFont, \'Segoe UI\', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="500">{title}</text>\n'
         f'</svg>\n'
     )
 

@@ -44,13 +44,13 @@ Track income, expenses, and budgets in a personal finance web app.
 
 ## Tools I Use
 
-<p>
-  <img src="assets/icons/typescript.svg" width="80" height="88" alt="TypeScript">
-  <img src="assets/icons/javascript.svg" width="80" height="88" alt="JavaScript">
-  <img src="assets/icons/react.svg" width="80" height="88" alt="React">
-  <img src="assets/icons/nextdotjs.svg" width="80" height="88" alt="Next.js">
-  <img src="assets/icons/electron.svg" width="80" height="88" alt="Electron">
-  <img src="assets/icons/vite.svg" width="80" height="88" alt="Vite">
+<p align="center">
+  <img src="assets/icons/typescript.svg" width="48" height="48" alt="TypeScript">&nbsp;
+  <img src="assets/icons/javascript.svg" width="48" height="48" alt="JavaScript">&nbsp;
+  <img src="assets/icons/react.svg" width="48" height="48" alt="React">&nbsp;
+  <img src="assets/icons/nextdotjs.svg" width="48" height="48" alt="Next.js">&nbsp;
+  <img src="assets/icons/electron.svg" width="48" height="48" alt="Electron">&nbsp;
+  <img src="assets/icons/vite.svg" width="48" height="48" alt="Vite">
 </p>
 
 ## Development Focus
