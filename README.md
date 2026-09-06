@@ -9,6 +9,12 @@ I build desktop and web tools for everyday tasks and creative workflows. Welcome
 
 <sub>DESKTOP APPS &nbsp; · &nbsp; CREATIVE TOOLS &nbsp; · &nbsp; WEB APPS</sub>
 
+## About Me
+
+I'm an independent developer crafting desktop applications and web tools from my night workshop. I specialize in building local-first utilities, voice-reactive software, and clean user interfaces.
+
+My focus is on software that feels fast, stays respectful of user privacy, and runs reliably offline. Whether tuning an avatar engine or refining daily productivity widgets, I enjoy turning practical ideas into well-crafted tools.
+
 ## Inside the Workshop
 
 - **Everyday utilities** — Desktop tools that keep plans, tasks, and notes close at hand.
