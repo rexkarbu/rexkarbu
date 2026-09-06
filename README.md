@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/rexs-night-workshop.png">
-  <img src="assets/rexs-night-workshop.gif" alt="Rex's Night Workshop: a pixel-art desk with a glowing monitor, books, a small plant, and a window overlooking the city at night." width="1200">
+  <source media="(prefers-reduced-motion: reduce)" srcset="assets/banner/lantern-passage.png">
+  <img src="assets/banner/lantern-passage.gif" alt="The Lantern Passage: a red-cloaked traveler walks along a stone path through a lantern-lit underground garden, framed by mossy arches, roots, and drifting mist." width="1200">
 </picture>
 
 # Hi, I'm Rex.

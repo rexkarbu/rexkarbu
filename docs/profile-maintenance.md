@@ -4,23 +4,26 @@ Profil ini adalah GitHub Profile README untuk [rexkarbu/rexkarbu](https://github
 
 ## Desain dan aset tetap
 
-Banner original dipertahankan tanpa perubahan:
+Banner aktif adalah **The Lantern Passage**, ilustrasi 2D dengan penjelajah berjubah merah di reruntuhan taman bawah tanah:
 
-- [PNG 1200 × 360](../assets/rexs-night-workshop.png): sumber permanen dan pilihan reduced motion.
-- [GIF 1200 × 360](../assets/rexs-night-workshop.gif): 24 frame, loop 3,84 detik; cahaya monitor berubah maksimal 8%.
-- [Prompt dan asal banner](banner-prompt.md): catatan pembuatan menggunakan image_gen.
+- [GIF 1200 × 360](../assets/banner/lantern-passage.gif): tampilan default, loop 9 detik, 144 frame dengan rata-rata 16 fps.
+- [PNG 1200 × 360](../assets/banner/lantern-passage.png): adegan utuh untuk reduced motion.
+- [Sumber ilustrasi dan prompt](../assets/banner/source/prompts.md): lingkungan serta rig karakter original, dibuat dengan image_gen.
+- [Panduan banner](lantern-passage.md): gerakan, parameter warna/durasi, regenerasi, dan batas pemeriksaan visual.
 - [Pemisah pixel](../assets/pixel-divider.svg): SVG original 320 × 12, digunakan dua kali secara dekoratif.
 
 Palet aset: charcoal `#0D1117`, midnight blue `#17243A`, sage `#9DB7A5`, amber `#E5B567`, off-white `#E6EDF3`. Teks Markdown tetap mengikuti tema GitHub. Gunakan satu banner, blok proyek vertikal, label kecil, dan informasi penting dalam teks.
 
-Untuk mengganti banner, simpan PNG dengan komposisi yang tetap terbaca pada layar kecil, sesuaikan koordinat `MONITOR` di skrip, lalu jalankan:
+Untuk merender ulang banner aktif dari sumber yang disimpan lokal:
 
 ```sh
-python -m pip install Pillow
-python scripts/animate-banner.py
+python -m pip install Pillow==12.3.0 numpy==2.5.1
+python scripts/render-lantern-passage.py
 ```
 
-Skrip mempertahankan PNG dan menulis ulang GIF. Pillow hanya diperlukan untuk animasi banner; generator aktivitas dan ikon memakai pustaka standar Python. Jika animasi banner tidak diinginkan, ganti elemen `picture` pertama dengan gambar Markdown yang menautkan PNG. Pertahankan alt text.
+Skrip menghasilkan GIF, PNG representatif, serta `render-info.json` tanpa jaringan, token, atau generator gambar saat render ulang. Banner hanya dirender ketika sumber atau parameter berubah; workflow aktivitas tetap terpisah dan tidak diubah. Jika animasi tidak diinginkan, gunakan PNG pada elemen gambar pertama dan pertahankan alt text.
+
+Banner pixel art sebelumnya tetap utuh di `assets/rexs-night-workshop.png` dan `.gif`, beserta `scripts/animate-banner.py` dan [catatan prompt historis](banner-prompt.md). Untuk memulihkannya, arahkan kedua path pada `picture` pertama ke aset lama dan kembalikan alt text yang sesuai. Versi sebelumnya juga tersedia dalam riwayat Git.
 
 ## Memperbarui proyek pilihan
 
@@ -155,20 +158,20 @@ Versi awal sudah ada pada commit `21b66e2`. Perubahan pengayaan dikerjakan di br
 ```sh
 git status --short --branch
 git diff --check
-git diff -- README.md docs/profile-maintenance.md
-git add README.md docs/profile-maintenance.md assets/pixel-divider.svg assets/icons assets/activity scripts/update-icons.py scripts/update-activity.py scripts/render-trail.cjs .github/workflows/profile-assets.yml
+git diff -- README.md docs/profile-maintenance.md docs/banner-prompt.md
+git add README.md docs/profile-maintenance.md docs/banner-prompt.md docs/lantern-passage.md assets/banner scripts/render-lantern-passage.py
 git diff --cached --stat
-git commit -m "Enrich Rex's Night Workshop profile"
+git commit -m "Replace profile banner with The Lantern Passage"
 git push origin main
 ```
 
-Setelah push, buka profil dan repositori GitHub. Repositori publik yang namanya sama dengan username akan menampilkan README root sesuai [panduan profile README](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme).
+Perintah staging di atas mencakup pergantian banner The Lantern Passage. Setelah push, buka profil dan repositori GitHub. Repositori publik yang namanya sama dengan username akan menampilkan README root sesuai [panduan profile README](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme). Banner tidak memerlukan run workflow aktivitas.
 
 Buka tab Actions → **Refresh profile assets** → **Run workflow**, pilih `main`. Pastikan kedua job berhasil, artifact berisi lima output, dan commit bot hanya mengubah `assets/activity/`. Tarik perubahan bot dengan `git pull --ff-only` sebelum pengeditan berikutnya.
 
 ## Pemeriksaan
 
-Periksa path gambar dan dokumen, tautan repositori/rilis, alt text, tiga proyek pilihan, bukti teknologi, serta tidak adanya narasi game dari kurasi lama. Periksa 360 px dan 1440 px, tema terang/gelap, serta dua fallback reduced motion. Pastikan banner original tidak berubah.
+Periksa path gambar dan dokumen, tautan repositori/rilis, alt text, tiga proyek pilihan, bukti teknologi, serta tidak adanya narasi game dari kurasi lama. Periksa 360 px dan 1440 px, tema terang/gelap, serta dua fallback reduced motion. Untuk pergantian banner, periksa animasi yang benar-benar diputar, sambungan loop, dan sumber aset menurut [panduan banner aktif](lantern-passage.md).
 
 Preview HTML lokal memakai CSS perkiraan GitHub; konversi API Markdown GitHub memeriksa penerimaan sintaks, tetapi keduanya berbeda dari halaman profil GitHub setelah push. Workflow hanya dapat diverifikasi di runner GitHub setelah berkasnya dipublikasikan. Jangan menyebut run lokal sebagai run GitHub Actions. Tidak ada test suite aplikasi untuk pekerjaan README ini.
 

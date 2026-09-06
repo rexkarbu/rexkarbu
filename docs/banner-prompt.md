@@ -1,5 +1,7 @@
 # Prompt banner original
 
+Catatan historis untuk banner pixel art sebelumnya. Banner aktif sekarang didokumentasikan dalam [The Lantern Passage](lantern-passage.md); sumber dan hasil lama tetap tersedia untuk pemulihan.
+
 Ilustrasi dibuat pada 6 September 2026 dengan tool bawaan `image_gen`, tanpa gambar referensi eksternal. Edit kedua menggunakan ilustrasi pertama sebagai satu-satunya target.
 
 ## Prompt awal
@@ -46,4 +48,3 @@ Nama `workshop-generated.png` pada contoh adalah berkas keluaran generator yang 
 Animasi lokal dibuat oleh [scripts/animate-banner.py](../scripts/animate-banner.py) dari PNG final. Hanya cahaya di dalam layar monitor yang berubah, dengan penurunan kecerahan maksimal 8%, 24 frame, dan loop 3,84 detik. Palet GIF dibagikan antarframe agar area lain tetap stabil. Versi statis tetap tersedia melalui `picture` saat preferensi reduced motion aktif.
 
 Lihat [panduan pemeliharaan](profile-maintenance.md) untuk menjalankan skrip dan mengganti banner.
-
