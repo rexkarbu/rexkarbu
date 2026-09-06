@@ -19,52 +19,33 @@ I build desktop and web tools for everyday tasks and creative workflows. Welcome
 
 ## Featured Projects
 
-### 01 · [NVL Studio](https://github.com/rexkarbu/nvl-studio)
+### [NVL Studio](https://github.com/rexkarbu/nvl-studio)
 
-<sub>DESKTOP · CREATIVE TOOLS</sub>
+Voice-reactive 2D avatars for OBS streaming.
 
-A desktop studio for voice-reactive 2D avatars and OBS broadcasting.
+<sub>TypeScript · React · Electron · Vite</sub>
 
-- Configure microphone-driven mouth states and automatic blinking.
-- Import and arrange PNG layers, then save character projects locally.
+### [Dashboard Daily](https://github.com/rexkarbu/dashboard-daily)
 
-**Built with:** TypeScript · React · Electron · Vite
+Weather, schedules, tasks, and notes in a compact desktop widget.
 
-### 02 · [Dashboard Daily](https://github.com/rexkarbu/dashboard-daily)
+<sub>TypeScript · React · Electron · [Windows release](https://github.com/rexkarbu/dashboard-daily/releases/tag/v0.2.0)</sub>
 
-<sub>DESKTOP · EVERYDAY UTILITIES</sub>
+### [ArthaFlow](https://github.com/rexkarbu/arthaflow)
 
-A compact desktop widget for weather, schedules, tasks, and quick notes.
+Track income, expenses, and budgets in a personal finance web app.
 
-- Carry unfinished tasks into the next day.
-- Keep notes and plans locally, with cached weather available offline.
-
-**Built with:** TypeScript · React · Electron
-
-[Windows release · v0.2.0](https://github.com/rexkarbu/dashboard-daily/releases/tag/v0.2.0) — Installer, ZIP, and checksums.
-
-### 03 · [ArthaFlow](https://github.com/rexkarbu/arthaflow)
-
-<sub>WEB · PERSONAL FINANCE</sub>
-
-A personal finance web app for tracking income, expenses, and budgets.
-
-- Record income and expense transactions by category.
-- Set monthly and category budgets alongside spending totals.
-
-**Built with:** JavaScript · React · Next.js
+<sub>JavaScript · React · Next.js</sub>
 
 ## Tools I Use
 
 <p>
-  <img src="assets/icons/typescript.svg" width="20" height="20" alt="TypeScript icon"> TypeScript &nbsp;
-  <img src="assets/icons/javascript.svg" width="20" height="20" alt="JavaScript icon"> JavaScript &nbsp;
-  <img src="assets/icons/react.svg" width="20" height="20" alt="React icon"> React
-</p>
-<p>
-  <img src="assets/icons/nextdotjs.svg" width="20" height="20" alt="Next.js icon"> Next.js &nbsp;
-  <img src="assets/icons/electron.svg" width="20" height="20" alt="Electron icon"> Electron &nbsp;
-  <img src="assets/icons/vite.svg" width="20" height="20" alt="Vite icon"> Vite
+  <img src="assets/icons/typescript.svg" width="80" height="88" alt="TypeScript">
+  <img src="assets/icons/javascript.svg" width="80" height="88" alt="JavaScript">
+  <img src="assets/icons/react.svg" width="80" height="88" alt="React">
+  <img src="assets/icons/nextdotjs.svg" width="80" height="88" alt="Next.js">
+  <img src="assets/icons/electron.svg" width="80" height="88" alt="Electron">
+  <img src="assets/icons/vite.svg" width="80" height="88" alt="Vite">
 </p>
 
 ## Development Focus

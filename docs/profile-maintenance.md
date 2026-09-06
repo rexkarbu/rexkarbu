@@ -24,7 +24,7 @@ Skrip mempertahankan PNG dan menulis ulang GIF. Pillow hanya diperlukan untuk an
 
 ## Memperbarui proyek pilihan
 
-Urutan yang dikurasi: **NVL Studio → Dashboard Daily → ArthaFlow**. Setiap blok memuat nama bertautan, satu kalimat manfaat, paling banyak dua kemampuan, dan teknologi yang terverifikasi. Label menggambarkan jenis proyek, bukan status pekerjaan atau tingkat keahlian.
+Urutan yang dikurasi: **NVL Studio → Dashboard Daily → ArthaFlow**. Setiap blok memuat nama bertautan, satu kalimat manfaat, dan metadata teknologi ringkas. Label menggambarkan jenis proyek, bukan status pekerjaan atau tingkat keahlian.
 
 Sebelum memperbarui, periksa visibilitas repositori, README, manifest dependensi, serta kode relevan secara read-only. Jangan mengambil database, data pengguna, atau isi repositori private. Atribut `private` pada `package.json` mengatur publikasi npm, bukan visibilitas GitHub.
 
@@ -52,7 +52,7 @@ Enam ikon berasal dari [Simple Icons 16.13.0](https://github.com/simple-icons/si
 - [Metadata sumber per ikon](../assets/icons/sources.json), termasuk tautan sumber resmi atau sumber desain asalnya.
 - JavaScript memiliki penanda MIT dalam metadata dan [lisensi sumber asli](../assets/icons/JAVASCRIPT-LICENSE.txt) ikut disimpan.
 - Entri Electron, React, TypeScript, Next.js, dan Vite pada versi ini tidak mencantumkan lisensi ikon terpisah. CC0 berlaku pada koleksi sesuai upstream; hak merek tetap milik pemiliknya. Lihat [disclaimer Simple Icons](https://github.com/simple-icons/simple-icons/blob/9ddef18c4247eab3819ec280f07cb8e95dc2a274/DISCLAIMER.md).
-- Bentuk path ikon dipertahankan. Presentasi memakai bidang charcoal dan warna monokrom sage; Next.js menggunakan off-white. Ikon hanya mengidentifikasi teknologi. Setiap ikon memiliki alt text dan label teks.
+- Bentuk path ikon dipertahankan. Presentasi memakai tile SVG lokal 80 × 88 px dengan sudut terpotong pixel, latar midnight blue `#17243A`, garis tepi sage `#9DB7A5`, aksen amber `#E5B567`, serta label teks di bawah logo. Logo menggunakan warna sage; Next.js menggunakan off-white. Ikon hanya mengidentifikasi teknologi. Setiap gambar memiliki alt text dan label visual.
 - Next.js dan merek terkait adalah merek dagang Vercel, Inc. atau afiliasinya. [Pedoman merek](https://vercel.com/geist/brands) dan [pedoman TypeScript](https://www.typescriptlang.org/branding/) menjadi rujukan penggunaan.
 
 Regenerasi ikon, tanpa npm atau CDN saat profil ditampilkan:
@@ -61,7 +61,7 @@ Regenerasi ikon, tanpa npm atau CDN saat profil ditampilkan:
 python scripts/update-icons.py
 ```
 
-Skrip mengunduh enam SVG serta lisensi dari revisi yang dipin, lalu menulis ulang `assets/icons/`. Ubah pin hanya setelah meninjau metadata, bentuk ikon, serta lisensi versi pengganti.
+Skrip mengunduh/mempertahankan enam SVG mentah di `assets/icons/raw/` serta lisensi dari revisi yang dipin, lalu menghasilkan ulang tile di `assets/icons/`. Ubah pin hanya setelah meninjau metadata, bentuk ikon, serta lisensi versi pengganti.
 
 ## Statistik dan contribution trail
 
