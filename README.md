@@ -37,6 +37,11 @@ Track income, expenses, and budgets in a personal finance web app.
 
 <sub>JavaScript · React · Next.js</sub>
 
+## Currently Building
+
+- **NVL Studio** — Building a streamlined workspace for voice-reactive 2D avatars.
+- **Dashboard Daily** — Improving the desktop widget experience and refining Windows releases.
+
 ## Tools I Use
 
 <p>
