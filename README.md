@@ -65,6 +65,10 @@ Track income, expenses, and budgets in a personal finance web app.
 
 <img src="assets/activity/github-stats.svg" width="480" alt="Snapshot of public repositories owned by rexkarbu and the stars they have received. Exact values and update date are in the linked snapshot.">
 
+<p>
+  <img src="https://streak-stats.demolab.com/?user=rexkarbu&theme=dark" alt="GitHub Streak">
+</p>
+
 Account-wide public repositories, including this profile. [Numbers, date, and data sources](assets/activity/README.md).
 
 ## Contribution Trail
