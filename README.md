@@ -37,6 +37,12 @@ Minimalist offline-first tracker for anime, movies, series, and reading.
 
 <sub>Flutter · Dart · Isar · REST API</sub>
 
+### [ArthaFlow](https://github.com/rexkarbu/arthaflow)
+
+Track income, expenses, and budgets in a personal finance web app.
+
+<sub>JavaScript · React · Next.js</sub>
+
 ## Currently Building
 
 - **Stravo** — Building an offline-first 3D GPS tracker and outdoor fitness mobile app.
