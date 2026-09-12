@@ -15,6 +15,7 @@ ICONS = {
     "nextdotjs": "Next.js",
     "electron": "Electron",
     "vite": "Vite",
+    "flutter": "Flutter",
 }
 OUT = Path(__file__).resolve().parents[1] / "assets/icons"
 RAW = OUT / "raw"
@@ -57,6 +58,8 @@ def tile(slug, raw_svg):
         inner = f'<path d="{d}" fill="#9FEAF9"/>'
     elif slug == "vite":
         inner = f'<path d="{d}" fill="#BD34FE"/>'
+    elif slug == "flutter":
+        inner = f'<path d="{d}" fill="#47C5FB"/>'
 
     return (
         f'<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" role="img" aria-label="{title}">\n'

@@ -25,28 +25,22 @@ My focus is on software that feels fast, stays respectful of user privacy, and r
 
 ## Featured Projects
 
-### [NVL Studio](https://github.com/rexkarbu/nvl-studio)
+### [Stravo](https://github.com/rexkarbu/Stravo/tree/rouf)
 
-Voice-reactive 2D avatars for OBS streaming.
+100% offline outdoor fitness and 3D GPS tracker.
 
-<sub>TypeScript · React · Electron · Vite</sub>
+<sub>Flutter · Dart · MapLibre · SQLite</sub>
 
-### [Dashboard Daily](https://github.com/rexkarbu/dashboard-daily)
+### [MyWatchlist](https://github.com/rexkarbu/mywatchlist-app)
 
-Weather, schedules, tasks, and notes in a compact desktop widget.
+Minimalist offline-first tracker for anime, movies, series, and reading.
 
-<sub>TypeScript · React · Electron · [Windows release](https://github.com/rexkarbu/dashboard-daily/releases/tag/v0.2.0)</sub>
-
-### [ArthaFlow](https://github.com/rexkarbu/arthaflow)
-
-Track income, expenses, and budgets in a personal finance web app.
-
-<sub>JavaScript · React · Next.js</sub>
+<sub>Flutter · Dart · Isar · REST API</sub>
 
 ## Currently Building
 
-- **NVL Studio** — Building a streamlined workspace for voice-reactive 2D avatars.
-- **Dashboard Daily** — Improving the desktop widget experience and refining Windows releases.
+- **Stravo** — Building an offline-first 3D GPS tracker and outdoor fitness mobile app.
+- **MyWatchlist** — Developing an offline-first media tracker for anime, movies, and reading.
 
 ## Tools I Use
 
@@ -56,7 +50,8 @@ Track income, expenses, and budgets in a personal finance web app.
   <img src="assets/icons/react.svg" width="48" height="48" alt="React">&nbsp;
   <img src="assets/icons/nextdotjs.svg" width="48" height="48" alt="Next.js">&nbsp;
   <img src="assets/icons/electron.svg" width="48" height="48" alt="Electron">&nbsp;
-  <img src="assets/icons/vite.svg" width="48" height="48" alt="Vite">
+  <img src="assets/icons/vite.svg" width="48" height="48" alt="Vite">&nbsp;
+  <img src="assets/icons/flutter.svg" width="48" height="48" alt="Flutter">
 </p>
 
 ## Development Focus
