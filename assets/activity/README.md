@@ -1,16 +1,16 @@
 # GitHub activity snapshot
 
-Updated **2026-09-12 (UTC)**. These files show the last successful refresh, not a live feed.
+Updated **2026-09-13 (UTC)**. These files show the last successful refresh, not a live feed.
 
 ## Public repositories
 
-- **8 public repositories** owned by rexkarbu, including forks and this profile repository.
-- **3 stars received** across those repositories.
+- **9 public repositories** owned by rexkarbu, including forks and this profile repository.
+- **2 stars received** across those repositories.
 - Source: [GitHub's public repository API](https://api.github.com/users/rexkarbu/repos). All result pages are included; private repositories are excluded. This snapshot covers the account, independently of the three featured projects. Stars are a repository metric, not a skill rating.
 
 ## Contribution calendar
 
-Period: **2025-09-07 through 2026-09-12**, inclusive. The calendar contains **382 contributions across 29 active days**.
+Period: **2025-09-14 through 2026-09-13**, inclusive. The calendar contains **396 contributions across 31 active days**.
 
 Source: [the publicly visible GitHub contribution calendar](https://github.com/users/rexkarbu/contributions). GitHub defines which activity appears here. If the account opts to expose anonymous private-contribution counts, the public calendar may include those counts; no private repository names or contents are collected.
 
