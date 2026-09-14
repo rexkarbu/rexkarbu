@@ -1,6 +1,6 @@
 # GitHub activity snapshot
 
-Updated **2026-09-13 (UTC)**. These files show the last successful refresh, not a live feed.
+Updated **2026-09-14 (UTC)**. These files show the last successful refresh, not a live feed.
 
 ## Public repositories
 
@@ -10,7 +10,7 @@ Updated **2026-09-13 (UTC)**. These files show the last successful refresh, not 
 
 ## Contribution calendar
 
-Period: **2025-09-14 through 2026-09-13**, inclusive. The calendar contains **396 contributions across 31 active days**.
+Period: **2025-09-14 through 2026-09-14**, inclusive. The calendar contains **369 contributions across 29 active days**.
 
 Source: [the publicly visible GitHub contribution calendar](https://github.com/users/rexkarbu/contributions). GitHub defines which activity appears here. If the account opts to expose anonymous private-contribution counts, the public calendar may include those counts; no private repository names or contents are collected.
 
