@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "owner": "rexkarbu",
-  "updated_utc": "2026-10-03",
+  "updated_utc": "2026-10-04",
   "repositories": {
     "count": 10,
     "stars_received": 2,
@@ -11,41 +11,6 @@
   "calendar": {
     "source": "https://github.com/users/rexkarbu/contributions",
     "days": [
-      {
-        "date": "2025-09-28",
-        "level": 0,
-        "count": 0
-      },
-      {
-        "date": "2025-09-29",
-        "level": 0,
-        "count": 0
-      },
-      {
-        "date": "2025-09-30",
-        "level": 0,
-        "count": 0
-      },
-      {
-        "date": "2025-10-01",
-        "level": 0,
-        "count": 0
-      },
-      {
-        "date": "2025-10-02",
-        "level": 0,
-        "count": 0
-      },
-      {
-        "date": "2025-10-03",
-        "level": 0,
-        "count": 0
-      },
-      {
-        "date": "2025-10-04",
-        "level": 0,
-        "count": 0
-      },
       {
         "date": "2025-10-05",
         "level": 0,
@@ -1863,6 +1828,11 @@
       },
       {
         "date": "2026-10-03",
+        "level": 0,
+        "count": 0
+      },
+      {
+        "date": "2026-10-04",
         "level": 0,
         "count": 0
       }
